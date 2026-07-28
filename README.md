@@ -105,9 +105,6 @@ Here you'll find my coursework, projects, SQL practice, Python scripts, architec
 
 - IBM SkillsBuild
 - IBM edX
-- MySQL Documentation
-- Python Documentation
-- Pandas Documentation
 
 ---
 
@@ -115,11 +112,11 @@ Here you'll find my coursework, projects, SQL practice, Python scripts, architec
 
 <p align="center">
 
-<a href="https://github.com/MillieTaffa">
-<img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github">
+<a href="mailto:mitafjhb025@student.wethinkcode.co.za">
+    <img src="https://img.shields.io/badge/Email-red?style=for-the-badge&logo=gmail&logoColor=white">
 </a>
 
-<a href="https://linkedin.com/in/YOUR-LINKEDIN">
+<a href="https://linkedin.com/in/millie-taffa-b52a243a9">
 <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin">
 </a>
 
