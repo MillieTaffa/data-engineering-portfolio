@@ -5,7 +5,7 @@
 ### *My journey to becoming a Data Engineer.*
 
 <p>
-Building data pipelines • Learning SQL • Exploring Big Data • Solving real-world problems
+Building data pipelines • Learning SQL • Exploring Data Analytics • Solving real-world problems
 </p>
 
 ![GitHub last commit](https://img.shields.io/github/last-commit/MillieTaffa/Data-Engineering-Portfolio?style=for-the-badge)
@@ -20,21 +20,36 @@ Building data pipelines • Learning SQL • Exploring Big Data • Solving real
 
 Welcome to my **Data Engineering Portfolio**.
 
-This repository documents my journey as I learn, build, and grow into a professional **Data Engineer**.
+I'm a Software Engineering student at WeThinkCode_ building my skills in Data Engineering, Python, SQL, and data analysis.
 
-Here you'll find my coursework, projects, SQL practice, Python scripts, architecture diagrams, notes, and documentation as I work through real-world data engineering concepts.
+This repository documents my learning journey through coursework, practical projects, experimentation, and research.
+
+Here you'll find:
+
+- Data engineering projects
+- Python scripts
+- SQL practice
+- ETL pipelines
+- Data cleaning and transformation
+- Data analysis and visualization
+- Architecture diagrams
+- Technical documentation
+- Course notes and learning resources
+
+My goal is to develop the practical skills needed to design, build, and maintain reliable data systems.
 
 ---
 
 ## 🎯 Goals
 
 - ✅ Learn Data Engineering fundamentals
-- ✅ Master SQL and relational databases
-- ✅ Build ETL pipelines
-- ✅ Work with APIs and datasets
-- ✅ Practice Python for automation
-- ✅ Learn cloud and big data technologies
-- ✅ Build a professional portfolio
+- ✅ Develop strong SQL and database skills
+- 🔄 Build and improve ETL pipelines
+- 🔄 Work with APIs and real-world datasets
+- 🔄 Practice Python for automation and data processing
+- 🔄 Learn data modeling and data warehousing
+- 🔄 Explore cloud and big data technologies
+- 🔄 Build professional, documented portfolio projects
 
 ---
 
@@ -46,25 +61,46 @@ Here you'll find my coursework, projects, SQL practice, Python scripts, architec
 
 </p>
 
-**Currently Learning**
+### Languages & Databases
 
+- Python
 - SQL
 - MySQL
-- Python
-- ETL
+- SQLite
+
+### Data Engineering
+
+- ETL Pipelines
+- Data Ingestion
+- Data Cleaning
+- Data Transformation
 - Data Modeling
+- Relational Databases
 - Data Warehousing
 - Data Lakes
-- Apache Airflow
-- Apache Spark
+
+### Tools & Technologies
+
+- Git & GitHub
+- VS Code
 - Docker
+- Apache Airflow *(Learning)*
+- Apache Spark *(Learning)*
 
 ---
 
-## 📚 Courses
+## 📚 Courses & Certifications
+
+### IBM
 
 - IBM Data Engineering Basics for Everyone
 - IBM Relational Database Management Systems
+
+### DataCamp
+
+Completed DataCamp courses as part of my ongoing development in data engineering, Python, SQL, and data-related skills.
+
+*Additional course details will be documented as my learning progresses.*
 
 ---
 
@@ -74,60 +110,23 @@ Here you'll find my coursework, projects, SQL practice, Python scripts, architec
 📦 Data-Engineering-Portfolio
 │
 ├── 📁 assets
+│   └── Architecture diagrams and project visuals
+│
 ├── 📁 courses
+│   ├── IBM
+│   └── DataCamp
+│
 ├── 📁 data
+│   ├── raw
+│   ├── processed
+│   └── README.md
+│
 ├── 📁 docs
+│   ├── Research
+│   ├── Notes
+│   └── Architecture
+│
 ├── 📁 projects
+│   ├── socialpulse
+│
 └── 📄 README.md
-```
-
----
-
-## 🚀 Projects
-
-| Project | Status |
-|----------|--------|
-| 🌦️ Weather ETL Pipeline | 🛠️ In Progress |
-| 🏦 Banking Analytics Pipeline | 📅 Planned |
-
----
-
-## 📈 Current Progress
-
-- 🌱 Learning SQL fundamentals
-- 🌱 Building Python automation scripts
-- 🌱 Studying Data Engineering concepts
-- 🌱 Creating portfolio projects
-
----
-
-## 📖 Resources
-
-- IBM SkillsBuild
-- IBM edX
-
----
-
-## 📬 Connect With Me
-
-<p align="center">
-
-<a href="mailto:mitafjhb025@student.wethinkcode.co.za">
-    <img src="https://img.shields.io/badge/Email-red?style=for-the-badge&logo=gmail&logoColor=white">
-</a>
-
-<a href="https://linkedin.com/in/millie-taffa-b52a243a9">
-<img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin">
-</a>
-
-</p>
-
----
-
-<div align="center">
-
-### ⭐ Thanks for stopping by!
-
-*"Every great data engineer starts with one dataset and one curious question."*
-
-</div>
