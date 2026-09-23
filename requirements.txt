@@ -1,6 +1,4 @@
 pandas
-numpy
-python-dotenv
-pytest
-plotly
 streamlit
+plotly
+pytest
