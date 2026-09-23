@@ -16,7 +16,6 @@ from src.clean import (
 )
 from tests.test_validate import make_sample_row
 
-
 def test_remove_duplicates_drops_repeated_post_id():
     data = pd.DataFrame([make_sample_row("POST_0001"), make_sample_row("POST_0001")])
 
