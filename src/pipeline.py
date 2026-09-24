@@ -15,6 +15,7 @@ from src.ingest import load_raw_data
 from src.validate import run_validation
 from src.clean import clean_data
 from src.transform import transform_data
+from src.load import save_processed_data
 from src.database import save_to_database
 
 
@@ -42,9 +43,8 @@ def run_pipeline():
 
     # Save the processed data as a CSV too, so it can be opened and
     # inspected directly without needing the database.
-    config.PROCESSED_DATA_DIR.mkdir(parents=True, exist_ok=True)
-    transformed_data.to_csv(config.PROCESSED_DATA_PATH, index=False)
-    print(f"\nProcessed data saved to: {config.PROCESSED_DATA_PATH}")
+    processed_data_path = save_processed_data(transformed_data)
+    print(f"\nProcessed data saved to: {processed_data_path}")
 
     # Step 5: Load the processed data into SQLite
     print("\nSTEP 5: DATABASE")
