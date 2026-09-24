@@ -1,17 +1,21 @@
-    """
-    validate.py
+"""
+validate.py
 
-    Responsibilty: check whether the raw data can be trusted before we process it further.
+Responsibility: check whether the raw data can be trusted before we
+process it further.
 
-    Important: this file does NOT fix any problem it finds. It only
-    detects and reports them. Fixing problems is the job of clean.py.
-    Keeping "finding problems" and "fixing problems" separate makes both files much easier to read, test, and reason about.
-    """
+Important: this file does NOT fix any problems it finds. It only
+detects and reports them. Fixing problems is the job of clean.py.
+Keeping "finding problems" and "fixing problems" separate makes both
+files much easier to read, test, and reason about.
+"""
 
 import pandas as pd
+
 from src import config
 
-def check_missing_values(data):
+
+def check_missing_columns(data):
     """Returns a list of required columns that are missing from the DataFrame."""
     missing = []
     for column in config.REQUIRED_COLUMNS:
@@ -19,17 +23,27 @@ def check_missing_values(data):
             missing.append(column)
     return missing
 
+
 def check_missing_values(data):
-    """Returns a pandas Series: how many missing (NaN) values are in each column"""
+    """Returns a pandas Series: how many missing (NaN) values are in each column."""
     return data.isnull().sum()
+
 
 def check_duplicate_ids(data):
     """Returns the number of duplicate Post_ID values."""
-    return int(data["Post_ID"]. duplicate().sum())
+    return int(data["Post_ID"].duplicated().sum())
+
 
 def check_duplicate_rows(data):
-    """Returns the number of fully duplicated rows (every column identical.)"""
-    return int(data.duplicate().sum())
+    """Returns the number of fully duplicated rows (every column identical)."""
+    return int(data.duplicated().sum())
+
+
+def check_invalid_dates(data):
+    """Returns the number of rows where Timestamp cannot be parsed as a real date/time."""
+    parsed_timestamps = pd.to_datetime(data["Timestamp"], errors="coerce")
+    return int(parsed_timestamps.isnull().sum())
+
 
 def check_negative_numbers(data):
     """
@@ -42,10 +56,12 @@ def check_negative_numbers(data):
             negative_counts[column] = int((data[column] < 0).sum())
     return negative_counts
 
+
 def check_hour_of_day_range(data):
-        """Returns the number of rows where Hour_of_Day is not between 0 and 23."""
-        out_of_range = (data["Hour_of_Day"] < 0 | (data["Hour_of_Day"]> 23))
-        return int(out_of_range.sum())
+    """Returns the number of rows where Hour_of_Day is not between 0 and 23."""
+    out_of_range = (data["Hour_of_Day"] < 0) | (data["Hour_of_Day"] > 23)
+    return int(out_of_range.sum())
+
 
 def check_unexpected_categories(data):
     """
@@ -69,6 +85,7 @@ def check_unexpected_categories(data):
     )
 
     return unexpected
+
 
 def check_timestamp_consistency(data):
     """

@@ -1,4 +1,4 @@
-    """
+"""
         config.py
 
         This file stores the file paths and the dataset settings that are used across the entire SocialPulse project. It keeps everything in one  place means we don't have to repeat file paths or column names in every file
@@ -27,7 +27,7 @@ DATABASE_PATH = DATABASE_DIR / "socialpulse.db"
 # -------- SQL PATHS --------
 
 SQL_DIR = BASE_DIR/"sql"
-SCHEMA_SQL_PATH = DATABASE_DIR / "schema.sql"
+SCHEMA_SQL_PATH = SQL_DIR / "schema.sql"
 
 # -------- DATASET EXCEPTATIONS --------
 # These lists describe what a "good" row of this dataset should look like.
@@ -75,7 +75,12 @@ NUMERIC_COLUMNS = [
 # Validation flags anything outside these lists as "unexpected" so we notice
 # new or misspelled categories instead of silently ignoring them.
 
-EXPECTING_PLATFORMS = ["Instagram", "Twitter", "Facebook", "TikTok", "LinkedIn", "YouTube"]
-EXPECTED_DAYS = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"]
+EXPECTED_PLATFORMS = [
+    "Instagram", "Twitter", "Facebook", "TikTok", "LinkedIn", "YouTube"
+]
+EXPECTED_DAYS = [
+    "Monday", "Tuesday", "Wednesday", "Thursday",
+    "Friday", "Saturday", "Sunday",
+]
 EXPECTED_SENTIMENTS = ["Positive", "Neutral", "Negative"]
 EXPECTED_TIERS = ["Nano", "Micro", "Mid-tier", "Macro"]

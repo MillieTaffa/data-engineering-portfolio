@@ -46,11 +46,11 @@ tests/test_clean.py build small, deliberately messy datasets to prove
 that.
 """
 
-import pandas as pandas
+import pandas as pd
 from src import config
 
 def remove_duplicates(data):
-       """Removes fully duplicated rows and rows with a repeated Post_ID."""
+    """Removes fully duplicated rows and rows with a repeated Post_ID."""
     data = data.drop_duplicates()
     data = data.drop_duplicates(subset="Post_ID", keep="first")
     return data

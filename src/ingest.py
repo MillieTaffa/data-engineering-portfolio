@@ -1,10 +1,10 @@
-    """
-        ingest.py
+"""
+    ingest.py
 
-        This file's purpose is to load the raw CSV file into pandas
+    This file's purpose is to load the raw CSV file into pandas
 
-        This is the first stage of the pipeline. Keeping it separate from the other stages means we could swap the CSV for a different source without changing the validate.py, clean.py,transform.py at all
-    """
+    This is the first stage of the pipeline. Keeping it separate from the other stages means we could swap the CSV for a different source without changing the validate.py, clean.py,transform.py at all
+"""
 
 import pandas as pd
 from src import config
