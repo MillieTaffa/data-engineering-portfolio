@@ -41,4 +41,4 @@ logs/
 Thumbs.db
 
 # Data outputs
-data/processed/
+data/processed/*.csv
