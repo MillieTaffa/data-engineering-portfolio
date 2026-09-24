@@ -65,7 +65,11 @@ def handle_missing_values(data):
 def fix_invalid_dates(data):
     """Converts Timestamp to a real datetime column and drops rows that fail to parse."""
     data = data.copy()
-    data["Timestamp"] = pd.to_datetime(data["Timestamp"], errors="coerce")
+    data["Timestamp"] = pd.to_datetime(
+        data["Timestamp"],
+        format="%Y-%m-%d %H:%M:%S",
+        errors="coerce",
+    )
     data = data.dropna(subset=["Timestamp"])
     return data
 

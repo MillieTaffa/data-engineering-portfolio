@@ -4,11 +4,11 @@
 
 -- Post_ID is the primary key because it identifies each post, and the cleaning step (src/clean.py) already guarantees there are no duplicate Post_ID values by the time the data gets to the table.
 
-CREATE TABLE IF NOT EXISTS post (
-    Pos_ID TEXT PRIMARY KEY,
+CREATE TABLE IF NOT EXISTS posts (
+    Post_ID TEXT PRIMARY KEY,
     Timestamp TEXT NOT NULL,
     post_date TEXT NOT NULL,
-     Platform TEXT NOT NULL,
+    Platform TEXT NOT NULL,
     Content_Type TEXT NOT NULL,
     Category TEXT NOT NULL,
     Likes INTEGER NOT NULL,

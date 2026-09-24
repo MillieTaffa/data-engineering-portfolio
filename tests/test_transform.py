@@ -70,5 +70,5 @@ def test_computed_engagement_rate_handles_zero_views():
 
     result = calculate_computed_engagement_rate(data)
 
-    # Should not raise a divide-by-zero error, and should be a real number.
-    assert result.loc[0, "computed_engagement_rate"] >= 0
+    # A rate is undefined when a post has no views.
+    assert pd.isna(result.loc[0, "computed_engagement_rate"])

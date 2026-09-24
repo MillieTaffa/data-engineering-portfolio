@@ -44,9 +44,8 @@ def calculate_computed_engagement_rate(data):
     DataFrame (run calculate_total_interactions first).
     """
     data = data.copy()
-    # Replace 0 with 1 only for this division, so we never divide by zero.
-    # (In this dataset, no post actually has 0 views - see docs/DATA_DICTIONARY.md.)
-    safe_views = data["Views"].replace(0, 1)
+    # A rate cannot be calculated when a post has no views.
+    safe_views = data["Views"].replace(0, float("nan"))
     data["computed_engagement_rate"] = ((data["total_interactions"] / safe_views) * 100).round(2)
     return data
 
@@ -54,7 +53,7 @@ def calculate_computed_engagement_rate(data):
 def calculate_comment_rate(data):
     """Adds comment_rate: Comments divided by Views, shown as a percentage."""
     data = data.copy()
-    safe_views = data["Views"].replace(0, 1)
+    safe_views = data["Views"].replace(0, float("nan"))
     data["comment_rate"] = ((data["Comments"] / safe_views) * 100).round(2)
     return data
 
@@ -62,7 +61,7 @@ def calculate_comment_rate(data):
 def calculate_share_rate(data):
     """Adds share_rate: Shares divided by Views, shown as a percentage."""
     data = data.copy()
-    safe_views = data["Views"].replace(0, 1)
+    safe_views = data["Views"].replace(0, float("nan"))
     data["share_rate"] = ((data["Shares"] / safe_views) * 100).round(2)
     return data
 
