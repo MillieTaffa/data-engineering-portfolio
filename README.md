@@ -89,6 +89,31 @@ My goal is to develop the practical skills needed to design, build, and maintain
 
 ---
 
+## 📂 Projects
+
+### 📊 SocialPulse
+
+**SocialPulse** is a data engineering project focused on analysing social media engagement data to identify patterns in content performance.
+
+The project demonstrates practical data engineering concepts including:
+
+- Data ingestion
+- Data cleaning
+- Data validation
+- Data transformation
+- SQL
+- Database storage
+- Data analysis
+- Data visualization
+- ETL pipeline development
+- Technical documentation
+
+📁 **[View SocialPulse Project](./projects/socialpulse/)**
+
+🎥 **[Watch the SocialPulse Project Presentation](https://youtu.be/GdyQBujVwus)**
+
+---
+
 ## 📚 Courses & Certifications
 
 ### IBM
@@ -113,20 +138,63 @@ Completed DataCamp courses as part of my ongoing development in data engineering
 │   └── Architecture diagrams and project visuals
 │
 ├── 📁 courses
-│   ├── IBM
-│   └── DataCamp
+│   ├── 📁 IBM
+│   └── 📁 DataCamp
 │
 ├── 📁 data
-│   ├── raw
-│   ├── processed
-│   └── README.md
+│   ├── 📁 raw
+│   ├── 📁 processed
+│   └── 📄 README.md
 │
 ├── 📁 docs
-│   ├── Research
-│   ├── Notes
-│   └── Architecture
+│   ├── 📁 Research
+│   ├── 📁 Notes
+│   └── 📁 Architecture
 │
 ├── 📁 projects
-│   ├── socialpulse
+│   └── 📁 socialpulse
+│       ├── 📁 data
+│       ├── 📁 database
+│       ├── 📁 dashboard
+│       ├── 📁 docs
+│       ├── 📁 sql
+│       ├── 📁 src
+│       └── 📄 README.md
 │
 └── 📄 README.md
+```
+
+---
+
+## 🚀 Featured Project
+
+| Project | Domain | Technologies | Status |
+|---|---|---|---|
+| [SocialPulse](./projects/socialpulse/) | Data Engineering | Python • SQL • SQLite • ETL • Data Analysis | ✅ Complete |
+
+---
+
+## 🎥 Project Presentations
+
+Project demonstrations and presentations are available on YouTube.
+
+### SocialPulse
+
+▶️ [Watch the SocialPulse Presentation](https://youtu.be/GdyQBujVwus)
+
+---
+
+## 📈 Learning Journey
+
+This repository will continue to grow as I develop my Data Engineering skills through:
+
+- Coursework
+- Personal projects
+- Technical research
+- Practical experimentation
+- SQL and database practice
+- Data pipeline development
+- Data analysis
+- Documentation
+
+**The goal is not only to build projects, but to understand how and why they work.**
