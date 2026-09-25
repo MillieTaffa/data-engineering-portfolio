@@ -108,8 +108,6 @@ The project demonstrates practical data engineering concepts including:
 - ETL pipeline development
 - Technical documentation
 
-📁 **[View SocialPulse Project](./projects/socialpulse/)**
-
 🎥 **[Watch the SocialPulse Project Presentation](https://youtu.be/GdyQBujVwus)**
 
 ---
